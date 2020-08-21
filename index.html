@@ -4,20 +4,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         table.tableBorder {
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            border-top: 1px solid black;
+            border-collapse: collapse;
+
+        }
+        th,td.thBorder {
             border: 1px solid black;
             border-collapse: collapse;
 
         }
-        th.thBorder {
+
+        th,td.tdBorder {
             border: 1px solid black;
             border-collapse: collapse;
 
         }
-
-        td.tdBorder {
-            border: 1px solid black;
+        th,td.tdBorderBottom{
+            border-bottom: 1px solid black;
             border-collapse: collapse;
-
+        }
+        th,td.tdBorderLeft {
+            padding-left: 10px;
+            border-left: 1px solid black;
+            border-collapse: collapse;
+        }
+        th,td.tdBorderRight {
+            padding-left: 10px;
+            border-right: 1px solid black;
+            border-collapse: collapse;
+        }
+        th,td.tdBorderTB {
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            border-collapse: collapse;
         }
 
         table.center {
@@ -40,7 +61,7 @@
         <table class="center tableBorder"  style="width: 1000px;">
             <tbody>
                 <tr>
-                    <td class="tdBorder" style="width: 400px;border:0px; height: 180px;">
+                    <td class="tdBorderRight" style="width: 400px; height: 180px;">
                         <table>
                             <tbody>
                                 <tr style="height: 50px;">
@@ -72,7 +93,7 @@
                             </tbody>
                         </table>
                     </td>
-                    <td class="tdBorder"  style="width: 400px; height: 180px;" align="left">
+                    <td class="tdBorderLeft"  style="width: 400px; height: 180px;" align="left">
                         <table>
                             <tbody>
                                 <tr style="height: 50px;">
@@ -99,56 +120,56 @@
         <table class="tableBorder center" style="width: 1000px;">
             <tbody>
                 <tr style="height: 50px;">
-                    <th style="width: 100px; height: 50px;" colspan="2">S.No</th>
-                    <th style="width: 500px; height: 50px;" colspan="12">Particulars</th>
-                    <th style="width: 100px; height: 50px;" colspan="2">HSN</th>
-                    <th style="width: 100px; height: 50px;" colspan="2">QTY</th>
-                    <th style="width: 100px; height: 50px;" colspan="2">AMOUNT</th>
+                    <th class="tdBorderLeft" style="width: 100px; height: 50px;" colspan="2">S.No</th>
+                    <th class="tdBorderLeft" style="width: 500px; height: 50px;" colspan="12">Particulars</th>
+                    <th class="tdBorderLeft" style="width: 100px; height: 50px;" colspan="2">HSN</th>
+                    <th class="tdBorderLeft" style="width: 100px; height: 50px;" colspan="2">QTY</th>
+                    <th class="tdBorderLeft" style="width: 100px; height: 50px;" colspan="2">AMOUNT</th>
                 </tr>
                 <tr style="height: 50px;">
-                    <td  style="width: 100px; height: 50px;" colspan="2">1</td>
-                    <td style="width: 500px; height: 50px;" colspan="12">Item1</td>
-                    <td style="width: 100px; height: 50px;" colspan="2">32532</td>
-                    <td style="width: 100px; height: 50px;" colspan="2">12</td>
-                    <td style="width: 100px; height: 50px;" colspan="2">1200</td>
+                    <td class="tdBorderLeft" style="width: 100px; height: 50px;" colspan="2">1</td>
+                    <td class="tdBorderLeft" style="width: 500px; height: 50px;" colspan="12">Item1</td>
+                    <td class="tdBorderLeft" style="width: 100px; height: 50px;" colspan="2">32532</td>
+                    <td class="tdBorderLeft" style="width: 100px; height: 50px;" colspan="2">12</td>
+                    <td class="tdBorderLeft" style="width: 100px; height: 50px;" colspan="2">1200</td>
                 </tr>
                 <tr style="height: 50px;">
-                    <td style="width: 100px; height: 50px;" colspan="2">1</td>
-                    <td style="width: 500px; height: 50px;" colspan="12">Item1</td>
-                    <td style="width: 100px; height: 50px;" colspan="2">32532</td>
-                    <td style="width: 100px; height: 50px;" colspan="2">12</td>
-                    <td style="width: 100px; height: 50px;" colspan="2">1200</td>
+                    <td class="tdBorderLeft" style="width: 100px; height: 50px;" colspan="2">1</td>
+                    <td class="tdBorderLeft" style="width: 500px; height: 50px;" colspan="12">Item1</td>
+                    <td class="tdBorderLeft" style="width: 100px; height: 50px;" colspan="2">32532</td>
+                    <td class="tdBorderLeft" style="width: 100px; height: 50px;" colspan="2">12</td>
+                    <td class="tdBorderLeft" style="width: 100px; height: 50px;" colspan="2">1200</td>
                 </tr>
                 <tr style="height: 50px;">
-                    <td style="width: 100px; height: 50px;" colspan="2">1</td>
-                    <td style="width: 500px; height: 50px;" colspan="12">Item1</td>
-                    <td style="width: 100px; height: 50px;" colspan="2">32532</td>
-                    <td style="width: 100px; height: 50px;" colspan="2">12</td>
-                    <td style="width: 100px; height: 50px;" colspan="2">1200</td>
+                    <td class="tdBorderLeft" style="width: 100px; height: 50px;" colspan="2">1</td>
+                    <td class="tdBorderLeft" style="width: 500px; height: 50px;" colspan="12">Item1</td>
+                    <td class="tdBorderLeft" style="width: 100px; height: 50px;" colspan="2">32532</td>
+                    <td class="tdBorderLeft" style="width: 100px; height: 50px;" colspan="2">12</td>
+                    <td class="tdBorderLeft" style="width: 100px; height: 50px;" colspan="2">1200</td>
                 </tr>
                 <tr style="height: 50px;">
-                    <td style="font-weight: bold; text-align: right; width: 100px; height: 50px;" colspan="14">Total
+                    <td class="tdBorderLeft tdBorderTB" style="font-weight: bold;  padding-right: 40px;  text-align: right; width: 100px; height: 50px;" colspan="14">Total
                     </td>
-                    <td style="font-weight: bold; text-align: right; width: 100px; height: 50px;" colspan="6">120000
+                    <td class="tdBorderLeft tdBorderTB" style="font-weight: bold; padding-right: 40px; text-align: right; width: 100px; height: 50px;" colspan="6">120000
                     </td>
                 </tr>
                 <tr style="height: 10px;">
-                    <td style="height: 10px;" colspan="20"><span style="font-size: 12px; text-align: left;"> Amount
+                    <td class="tdBorderLeft " style="height: 10px; padding-top: 10px; " colspan="20"><span style="font-size: 12px; text-align: left;"> Amount
                             Chargeable
                             in words </span></td>
                 </tr>
                 <tr style="height: 50px;">
-                    <td style="height: 50px;" colspan="20"><span style="font-size: 14px; font-weight: bold;"> One Lakhs
+                    <td class="tdBorderLeft tdBorderBottom" style="height: 50px; " colspan="20"><span style="font-size: 14px; font-weight: bold;"> One Lakhs
                             Twenty
                             thousand only </span></td>
                 </tr>
                 <tr style="height: 10px;">
-                    <td style="height: 10px;" colspan="20"><span style="font-size: 12px; text-align: left;"> Remarks
+                    <td class="tdBorderLeft" style="height: 10px; padding-top: 10px;" colspan="20"><span style="font-size: 12px; text-align: left;"> Remarks
                         </span>
                     </td>
                 </tr>
                 <tr style="height: 50px;">
-                    <td style="height: 50px;" colspan="20"><span style="font-size: 12px; font-weight: bold;">
+                    <td class="tdBorderLeft" style="height: 50px;" colspan="20"><span style="font-size: 12px; font-weight: bold;">
                             PROFESSIONAL
                             CHARGES FOR PAYROLL PROCESSING FOR THE MONTH OF JUNE 2020 </span></td>
                 </tr>
@@ -157,7 +178,7 @@
         <table class="center tableBorder" style="width: 1000px;">
             <tbody>
                 <tr>
-                    <td style="width: 400px; height: 50px;">
+                    <td class="tdBorderLeft"  style="width: 400px; height: 50px;">
                         <table>
                             <tbody>
                                 <tr>
@@ -175,7 +196,7 @@
                             </tbody>
                         </table>
                     </td>
-                    <td style="width: 450px; height: 50px;">
+                    <td class="tdBorderLeft"  style="width: 450px; height: 50px;">
                         <table>
                             <tbody>
                                 <tr>
