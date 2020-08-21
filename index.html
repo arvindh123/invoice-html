@@ -1,153 +1,189 @@
-<div style="font-size: 12px; text-align: center;margin-bottom:20px">
-    <img
-        src="data:image/png;base64,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">
-    <h1 style="text-align: center;margin-bottom:0px">DREAMJOBS</h1>
-    NEW NO. 32, OLD NO. C-22, 12TH AVENUE,, ASHOK NAGAR, CHENNAI - 600083 <br /> PAN No.:AAGFD7749B
-</div>
-<table>
-    <tbody>
-        <tr>
-            <td style="width: 400px; height: 180px;">
-                <table>
-                    <tbody>
-                        <tr style="height: 50px;">
-                            <td colspan="1">Name&emsp;&emsp;:</td>
-                            <td style="font-weight: bold; font-size: 12px;" colspan="4">AVATAR SOFT CONSULTANCY SERVICES
-                                PRIVATE LIMITED</td>
-                        </tr>
-                        <tr style="height: 30px;">
-                            <td colspan="1">Address&ensp;&nbsp;:</td>
-                            <td style="font-weight: bold; font-size: 12px;" colspan="4">PRINCE INFOCITY II, UNIT NO.1,
-                                IST FLOOR 283/3 &amp; 283/4, RAJIV GANDHI SALAI,PERUNGUDI CHENNAI</td>
-                        </tr>
-                        <tr style="height: 30px;">
-                            <td style="font-size: 12px;" colspan="1">GSTIN&emsp;&emsp;&ensp;:</td>
-                            <td style="font-weight: bold; font-size: 12px;" colspan="4">1234556457</td>
-                        </tr>
-                        <tr style="height: 30px;">
-                            <td style="font-size: 12px;" colspan="1">State&emsp;&emsp;&emsp;:</td>
-                            <td style="font-weight: bold; font-size: 12px;" colspan="2">Tamil Nadu</td>
-                            <td style="font-size: 12px;" colspan="1">State Code :</td>
-                            <td style="font-weight: bold; font-size: 12px;" colspan="1">33</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-            <td style="width: 400px; height: 180px;" align="left">
-                <table>
-                    <tbody>
-                        <tr style="height: 50px;">
-                            <td>Invoice No&emsp;&emsp;:</td>
-                            <td style="font-weight: bold; font-size: 12px;">12321312</td>
-                        </tr>
-                        <tr style="height: 30px;">
-                            <td colspan="1">Invoice Date&ensp;&nbsp;:</td>
-                            <td style="font-weight: bold; font-size: 12px;" colspan="4">22-Aug-2020</td>
-                        </tr>
-                        <tr style="height: 30px;">
-                            <td colspan="1">Job No.&emsp;&emsp;&emsp;&ensp;:</td>
-                            <td style="font-weight: bold; font-size: 12px;" colspan="4">1234556457</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <tbody>
-        <tr style="height: 50px;">
-            <th style="width: 100px; height: 50px;" colspan="2">S.No</th>
-            <th style="width: 500px; height: 50px;" colspan="12">Particulars</th>
-            <th style="width: 100px; height: 50px;" colspan="2">HSN</th>
-            <th style="width: 100px; height: 50px;" colspan="2">QTY</th>
-            <th style="width: 100px; height: 50px;" colspan="2">AMOUNT</th>
-        </tr>
-        <tr style="height: 50px;">
-            <td style="width: 100px; height: 50px;" colspan="2">1</td>
-            <td style="width: 500px; height: 50px;" colspan="12">Item1</td>
-            <td style="width: 100px; height: 50px;" colspan="2">32532</td>
-            <td style="width: 100px; height: 50px;" colspan="2">12</td>
-            <td style="width: 100px; height: 50px;" colspan="2">1200</td>
-        </tr>
-        <tr style="height: 50px;">
-            <td style="width: 100px; height: 50px;" colspan="2">1</td>
-            <td style="width: 500px; height: 50px;" colspan="12">Item1</td>
-            <td style="width: 100px; height: 50px;" colspan="2">32532</td>
-            <td style="width: 100px; height: 50px;" colspan="2">12</td>
-            <td style="width: 100px; height: 50px;" colspan="2">1200</td>
-        </tr>
-        <tr style="height: 50px;">
-            <td style="width: 100px; height: 50px;" colspan="2">1</td>
-            <td style="width: 500px; height: 50px;" colspan="12">Item1</td>
-            <td style="width: 100px; height: 50px;" colspan="2">32532</td>
-            <td style="width: 100px; height: 50px;" colspan="2">12</td>
-            <td style="width: 100px; height: 50px;" colspan="2">1200</td>
-        </tr>
-        <tr style="height: 50px;">
-            <td style="font-weight: bold; text-align: right; width: 100px; height: 50px;" colspan="14">Total</td>
-            <td style="font-weight: bold; text-align: right; width: 100px; height: 50px;" colspan="6">120000</td>
-        </tr>
-        <tr style="height: 10px;">
-            <td style="height: 10px;" colspan="20"><span style="font-size: 12px; text-align: left;"> Amount Chargeable
-                    in words </span></td>
-        </tr>
-        <tr style="height: 50px;">
-            <td style="height: 50px;" colspan="20"><span style="font-size: 14px; font-weight: bold;"> One Lakhs Twenty
-                    thousand only </span></td>
-        </tr>
-        <tr style="height: 10px;">
-            <td style="height: 10px;" colspan="20"><span style="font-size: 12px; text-align: left;"> Remarks </span>
-            </td>
-        </tr>
-        <tr style="height: 50px;">
-            <td style="height: 50px;" colspan="20"><span style="font-size: 12px; font-weight: bold;"> PROFESSIONAL
-                    CHARGES FOR PAYROLL PROCESSING FOR THE MONTH OF JUNE 2020 </span></td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <tbody>
-        <tr>
-            <td style="width: 400px; height: 50px;">
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>Bank Name&emsp;&emsp;&emsp;&ensp;&nbsp;&nbsp;:</td>
-                            <td style="font-weight: bold; font-size: 12px;">KVB Bank</td>
-                        </tr>
-                        <tr>
-                            <td>A/C No.&emsp;&ensp;&nbsp; &emsp;&emsp;&emsp;&ensp; :</td>
-                            <td style="font-weight: bold; font-size: 12px;">1616135000002593</td>
-                        </tr>
-                        <tr>
-                            <td style="font-size: 12px;">Branch &amp; IFSC Code&emsp;&ensp;:</td>
-                            <td style="font-weight: bold; font-size: 12px;">KVBL0001616</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-            <td style="width: 450px; height: 50px;">
-                <table>
-                    <tbody>
-                        <tr>
-                            <td
-                                style="width: 450px; font-size: 11px; font-weight: bold; height: 50; text-align: center;">
-                                For DREAMJOBS</td>
-                        </tr>
-                        <tr>
-                            <td
-                                style="width: 450px; font-size: 18px; ;font-weight: bold; height: 50; text-align: center;">
-                                &nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td
-                                style="width: 450px; font-size: 11px; font-weight: bold; height: 50; text-align: center;">
-                                Authorized Signatory</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-    </tbody>
-</table>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        table.center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="font-size: 12px; text-align: center;margin-bottom:20px">
+        <img
+            src="data:image/png;base64,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">
+        <h1 style="text-align: center;margin-bottom:0px">DREAMJOBS</h1>
+        NEW NO. 32, OLD NO. C-22, 12TH AVENUE,, ASHOK NAGAR, CHENNAI - 600083 <br /> PAN No.:AAGFD7749B
+    </div>
+    <div>
+
+        <table >
+            <tbody>
+                <tr>
+                    <td style="width: 400px; height: 180px;">
+                        <table>
+                            <tbody>
+                                <tr style="height: 50px;">
+                                    <td colspan="1">Name&emsp;&emsp;:</td>
+                                    <td style="font-weight: bold; font-size: 12px;" colspan="4">AVATAR SOFT CONSULTANCY
+                                        SERVICES
+                                        PRIVATE LIMITED</td>
+                                </tr>
+                                <tr style="height: 30px;">
+                                    <td colspan="1">Address&ensp;&nbsp;:</td>
+                                    <td style="font-weight: bold; font-size: 12px;" colspan="4">PRINCE INFOCITY II, UNIT
+                                        NO.1,
+                                        IST FLOOR 283/3 &amp; 283/4, RAJIV GANDHI SALAI,PERUNGUDI CHENNAI</td>
+                                </tr>
+                                <tr style="height: 30px;">
+                                    <td style="font-size: 12px;" colspan="1">GSTIN&emsp;&emsp;&ensp;:</td>
+                                    <td style="font-weight: bold; font-size: 12px;" colspan="4">1234556457</td>
+                                </tr>
+                                <tr style="height: 30px;">
+                                    <td style="font-size: 12px;" colspan="1">State&emsp;&emsp;&emsp;:</td>
+                                    <td style="font-weight: bold; font-size: 12px;" colspan="2">Tamil Nadu</td>
+                                    <td style="font-size: 12px;" colspan="1">State Code :</td>
+                                    <td style="font-weight: bold; font-size: 12px;" colspan="1">33</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td style="width: 400px; height: 180px;" align="left">
+                        <table>
+                            <tbody>
+                                <tr style="height: 50px;">
+                                    <td>Invoice No&emsp;&emsp;:</td>
+                                    <td style="font-weight: bold; font-size: 12px;">12321312</td>
+                                </tr>
+                                <tr style="height: 30px;">
+                                    <td colspan="1">Invoice Date&ensp;&nbsp;:</td>
+                                    <td style="font-weight: bold; font-size: 12px;" colspan="4">22-Aug-2020</td>
+                                </tr>
+                                <tr style="height: 30px;">
+                                    <td colspan="1">Job No.&emsp;&emsp;&emsp;&ensp;:</td>
+                                    <td style="font-weight: bold; font-size: 12px;" colspan="4">1234556457</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <tbody>
+                <tr style="height: 50px;">
+                    <th style="width: 100px; height: 50px;" colspan="2">S.No</th>
+                    <th style="width: 500px; height: 50px;" colspan="12">Particulars</th>
+                    <th style="width: 100px; height: 50px;" colspan="2">HSN</th>
+                    <th style="width: 100px; height: 50px;" colspan="2">QTY</th>
+                    <th style="width: 100px; height: 50px;" colspan="2">AMOUNT</th>
+                </tr>
+                <tr style="height: 50px;">
+                    <td style="width: 100px; height: 50px;" colspan="2">1</td>
+                    <td style="width: 500px; height: 50px;" colspan="12">Item1</td>
+                    <td style="width: 100px; height: 50px;" colspan="2">32532</td>
+                    <td style="width: 100px; height: 50px;" colspan="2">12</td>
+                    <td style="width: 100px; height: 50px;" colspan="2">1200</td>
+                </tr>
+                <tr style="height: 50px;">
+                    <td style="width: 100px; height: 50px;" colspan="2">1</td>
+                    <td style="width: 500px; height: 50px;" colspan="12">Item1</td>
+                    <td style="width: 100px; height: 50px;" colspan="2">32532</td>
+                    <td style="width: 100px; height: 50px;" colspan="2">12</td>
+                    <td style="width: 100px; height: 50px;" colspan="2">1200</td>
+                </tr>
+                <tr style="height: 50px;">
+                    <td style="width: 100px; height: 50px;" colspan="2">1</td>
+                    <td style="width: 500px; height: 50px;" colspan="12">Item1</td>
+                    <td style="width: 100px; height: 50px;" colspan="2">32532</td>
+                    <td style="width: 100px; height: 50px;" colspan="2">12</td>
+                    <td style="width: 100px; height: 50px;" colspan="2">1200</td>
+                </tr>
+                <tr style="height: 50px;">
+                    <td style="font-weight: bold; text-align: right; width: 100px; height: 50px;" colspan="14">Total
+                    </td>
+                    <td style="font-weight: bold; text-align: right; width: 100px; height: 50px;" colspan="6">120000
+                    </td>
+                </tr>
+                <tr style="height: 10px;">
+                    <td style="height: 10px;" colspan="20"><span style="font-size: 12px; text-align: left;"> Amount
+                            Chargeable
+                            in words </span></td>
+                </tr>
+                <tr style="height: 50px;">
+                    <td style="height: 50px;" colspan="20"><span style="font-size: 14px; font-weight: bold;"> One Lakhs
+                            Twenty
+                            thousand only </span></td>
+                </tr>
+                <tr style="height: 10px;">
+                    <td style="height: 10px;" colspan="20"><span style="font-size: 12px; text-align: left;"> Remarks
+                        </span>
+                    </td>
+                </tr>
+                <tr style="height: 50px;">
+                    <td style="height: 50px;" colspan="20"><span style="font-size: 12px; font-weight: bold;">
+                            PROFESSIONAL
+                            CHARGES FOR PAYROLL PROCESSING FOR THE MONTH OF JUNE 2020 </span></td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <tbody>
+                <tr>
+                    <td style="width: 400px; height: 50px;">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Bank Name&emsp;&emsp;&emsp;&ensp;&nbsp;&nbsp;:</td>
+                                    <td style="font-weight: bold; font-size: 12px;">KVB Bank</td>
+                                </tr>
+                                <tr>
+                                    <td>A/C No.&emsp;&ensp;&nbsp; &emsp;&emsp;&emsp;&ensp; :</td>
+                                    <td style="font-weight: bold; font-size: 12px;">1616135000002593</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 12px;">Branch &amp; IFSC Code&emsp;&ensp;:</td>
+                                    <td style="font-weight: bold; font-size: 12px;">KVBL0001616</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td style="width: 450px; height: 50px;">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td
+                                        style="width: 450px; font-size: 11px; font-weight: bold; height: 50; text-align: center;">
+                                        For DREAMJOBS</td>
+                                </tr>
+                                <tr>
+                                    <td
+                                        style="width: 450px; font-size: 18px; ;font-weight: bold; height: 50; text-align: center;">
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td
+                                        style="width: 450px; font-size: 11px; font-weight: bold; height: 50; text-align: center;">
+                                        Authorized Signatory</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
